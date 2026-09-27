@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="Testcases.Guru99_demo_bank_All_Testcases">
+        <methods>
+          <include name="delete_account_testcase"/>
+          <include name="delete_customer_testcase"/>
+          <include name="flushReport"/>
+          <include name="login_testcase"/>
+          <include name="setupReport"/>
+          <include name="new_customer_testcase"/>
+          <include name="new_account_testcase"/>
+          <include name="closeBrowser"/>
+          <include name="initialize_n_OpenBrowser"/>
+          <include name="logout_testcase"/>
+        </methods>
+      </class> <!-- Testcases.Guru99_demo_bank_All_Testcases -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

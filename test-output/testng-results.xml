@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-09-27T12:21:32 IST" name="Default suite" finished-at="2026-09-27T12:22:22 IST" duration-ms="50096">
+    <groups>
+    </groups>
+    <test started-at="2026-09-27T12:21:32 IST" name="Default test" finished-at="2026-09-27T12:22:22 IST" duration-ms="50096">
+      <class name="Testcases.Guru99_demo_bank_All_Testcases">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:Testcases.Guru99_demo_bank_All_Testcases@40f70521]" started-at="2026-09-27T12:21:32 IST" name="setupReport" finished-at="2026-09-27T12:21:32 IST" duration-ms="536" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupReport -->
+        <test-method is-config="true" signature="initialize_n_OpenBrowser()[pri:0, instance:Testcases.Guru99_demo_bank_All_Testcases@40f70521]" started-at="2026-09-27T12:21:32 IST" name="initialize_n_OpenBrowser" finished-at="2026-09-27T12:21:46 IST" duration-ms="13551" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize_n_OpenBrowser -->
+        <test-method signature="login_testcase()[pri:0, instance:Testcases.Guru99_demo_bank_All_Testcases@40f70521]" started-at="2026-09-27T12:21:46 IST" name="login_testcase" finished-at="2026-09-27T12:21:53 IST" duration-ms="6944" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_testcase -->
+        <test-method signature="new_customer_testcase()[pri:0, instance:Testcases.Guru99_demo_bank_All_Testcases@40f70521]" started-at="2026-09-27T12:21:53 IST" name="new_customer_testcase" finished-at="2026-09-27T12:21:59 IST" depends-on-methods="Testcases.Guru99_demo_bank_All_Testcases.login_testcase" duration-ms="6147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- new_customer_testcase -->
+        <test-method signature="new_account_testcase()[pri:0, instance:Testcases.Guru99_demo_bank_All_Testcases@40f70521]" started-at="2026-09-27T12:21:59 IST" name="new_account_testcase" finished-at="2026-09-27T12:22:06 IST" depends-on-methods="Testcases.Guru99_demo_bank_All_Testcases.new_customer_testcase" duration-ms="6390" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- new_account_testcase -->
+        <test-method signature="delete_account_testcase()[pri:0, instance:Testcases.Guru99_demo_bank_All_Testcases@40f70521]" started-at="2026-09-27T12:22:06 IST" name="delete_account_testcase" finished-at="2026-09-27T12:22:12 IST" depends-on-methods="Testcases.Guru99_demo_bank_All_Testcases.new_account_testcase" duration-ms="5928" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delete_account_testcase -->
+        <test-method signature="delete_customer_testcase()[pri:0, instance:Testcases.Guru99_demo_bank_All_Testcases@40f70521]" started-at="2026-09-27T12:22:12 IST" name="delete_customer_testcase" finished-at="2026-09-27T12:22:19 IST" depends-on-methods="Testcases.Guru99_demo_bank_All_Testcases.delete_account_testcase" duration-ms="7488" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delete_customer_testcase -->
+        <test-method signature="logout_testcase()[pri:0, instance:Testcases.Guru99_demo_bank_All_Testcases@40f70521]" started-at="2026-09-27T12:22:19 IST" name="logout_testcase" finished-at="2026-09-27T12:22:19 IST" depends-on-methods="Testcases.Guru99_demo_bank_All_Testcases.delete_customer_testcase" duration-ms="96" status="FAIL">
+          <exception class="org.openqa.selenium.UnhandledAlertException">
+            <message>
+              <![CDATA[Unexpected alert dialog detected. Performed handler "dismiss": Customer could not be deleted!!. First delete all accounts of this customer then delete the customer
+Build info: version: '4.45.0', revision: 'cd6a3cd cd6a3cdfca6970f62e5bc8344109d0fe0e2af05e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.11'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [ef6efa93-58dc-47fc-af5d-3475a4d401ff, findElement {value=//a[@href='Logout.php'], using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 153.0.4, moz:accessibilityChecks: false, moz:buildID: 20260810162159, moz:geckodriverVersion: 0.37.1, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 57668, moz:profile: C:\Users\SURAJS~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: ef6efa93-58dc-47fc-af5d-3475a4d401ff]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: Unexpected alert dialog detected. Performed handler "dismiss": Customer could not be deleted!!. First delete all accounts of this customer then delete the customer
+Build info: version: '4.45.0', revision: 'cd6a3cd cd6a3cdfca6970f62e5bc8344109d0fe0e2af05e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.11'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [ef6efa93-58dc-47fc-af5d-3475a4d401ff, findElement {value=//a[@href='Logout.php'], using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 153.0.4, moz:accessibilityChecks: false, moz:buildID: 20260810162159, moz:geckodriverVersion: 0.37.1, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 57668, moz:profile: C:\Users\SURAJS~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: ef6efa93-58dc-47fc-af5d-3475a4d401ff
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:141)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:575)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:396)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:390)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy21.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:365)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:351)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:348)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:210)
+at POM_pages.Logout_POM.clickLogout(Logout_POM.java:37)
+at POM_pages.Logout_POM.logout(Logout_POM.java:67)
+at Testcases.Guru99_demo_bank_All_Testcases.logout_testcase(Guru99_demo_bank_All_Testcases.java:141)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout_testcase -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Testcases.Guru99_demo_bank_All_Testcases@40f70521]" started-at="2026-09-27T12:22:19 IST" name="closeBrowser" finished-at="2026-09-27T12:22:22 IST" duration-ms="2904" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:Testcases.Guru99_demo_bank_All_Testcases@40f70521]" started-at="2026-09-27T12:22:22 IST" name="flushReport" finished-at="2026-09-27T12:22:23 IST" duration-ms="636" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReport -->
+      </class> <!-- Testcases.Guru99_demo_bank_All_Testcases -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
